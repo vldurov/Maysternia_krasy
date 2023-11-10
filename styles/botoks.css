@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap');
 
 :root {
-    font-family: 'Jura', sans-serif;
     font-weight: 400;
     font-size: 10px;
 }
 
 body, p {
+    font-family: 'Jura', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -68,20 +68,11 @@ body, p {
 }
 
 .header_container-navigation li ul {
-    text-align: center;
-    position: absolute;
-    top: 3.4rem;
-    right: 34rem;
-    z-index: 2;
     display: none;
 }
 
-.header_container-navigation li li {
-    padding: .4rem;
-    background: white;
-    border-collapse: collapse;
-    opacity: .9;
-    transition: all .3s;
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #34040437;
 }
 
 .header_container-navigation li:hover ul {
@@ -106,21 +97,12 @@ body, p {
     transition: none;
 }
 
-.header_container-navigation a:hover path {
-    stroke: #f14e4ee5;
-    transition: all .3s;
-}
-
-.header_container-navigation a:active path {
-    stroke: #840000;
-    transition: none;
-}
-
 .header_container-navigation a {
     font-size: 2rem;
     text-decoration: none;
     color: #340404;
 }
+
 /* botoks */
 
 .botoks {
@@ -141,8 +123,9 @@ body, p {
 
 .contact {
     padding-top: 5rem;
-    height: 19rem;
+    height: 24rem;
     background-color: #39393f;
+    line-height: 1.9rem;
 }
 
 .contact-us {
@@ -150,6 +133,10 @@ body, p {
     justify-content: space-between;
     color: white;
     font-size: 1.8rem;
+}
+
+.contact-us a {
+    text-decoration: none;
 }
 
 .contact-us div {
