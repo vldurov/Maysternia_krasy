@@ -84,14 +84,6 @@ body, p {
     animation: top 1s ease alternate none;
 }
 
-.header_container-logo img {
-    width: 100%;
-}
-
-.header_container-logo {
-    width: 11%;
-}
-
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -376,19 +368,10 @@ body, p {
     font-size: 1.5rem;
 }
 
-.contact-us div p:nth-child(4), .contact-us div p:nth-child(7) {
-    color: rgb(191, 148, 148);
-}
-
-
-
 
 @media screen and (max-width: 767px) {
     .container_mini, .container {
         width: 90%;
-    }
-    .header_container-logo {
-        width: 20%;
     }
     .header_container{
         padding: 1rem;
