@@ -83,23 +83,23 @@ body, p {
 }
 
 .price__block > p {
-    font-size: 2.3rem;
+    font-size: 1.9rem;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     margin: 1rem 0 1rem 0;
 }
 
 .price__wrap span {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 .price__block {
     background-color: rgba(255, 255, 255, 0.5);
-    padding: .1rem 5rem 5rem 5rem;
+    padding: .1rem 2rem 5rem 2rem;
 }
 
 .price__block {
-    font-size: 2.8rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -108,7 +108,7 @@ body, p {
 }
 
 .price__item span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .price__item {
@@ -117,7 +117,7 @@ body, p {
 }
 
 .price__item p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #000000c9;
 }
 
@@ -182,4 +182,44 @@ body, p {
 
 .contact-us div p {
     font-size: 1.5rem;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .container_price {
+        width: 75%;
+    }
+    .contact {
+        height: 55rem;
+    }
+    .contact-us {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        padding: 0;
+    }
+    .contact-us div {
+        width: 35%;
+    }
+    .contact-us div:last-of-type {
+        margin-top: 2rem;
+        align-items: baseline;
+    }    
+}
+
+
+@media screen and (max-width: 590px) {
+    .container_price {
+        width: 100%;
+    }
+    .price__block {
+        padding: .1rem .5rem 5rem .5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    .container_price {
+        width: 65%;
+    }
 }
