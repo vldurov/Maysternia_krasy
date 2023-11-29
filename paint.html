@@ -11,48 +11,61 @@
 </head>
 <body>
     <header>
-        <div class="header_container container">
-            <div class="header_container-logo"><a href="./index.html"><img src="./img/logo/logo.png" alt="logo"></a></div>
-            <div class="header_container-navigation">
-                <ul>
-                    <li><a href="./index.html">Головна</a></li>
-                    <li><a href="./gallery.html">Галерея</a></li>
-                    <li class="nav-item dropdown"><a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Послуги <span>&#9660;</span></a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#"><li>Жіноча стрижка</li></a>
-                            <a class="dropdown-item" href="#"><li>Чоловіча стрижка</li></a>
-                            <a class="dropdown-item" href="#"><li>Дитяча стрижка</li></a>
-                            <a class="dropdown-item" href="#"><li>Фарбування</li></a>
-                            <a class="dropdown-item" href="#"><li>Зачіски</li></a>
-                            <a class="dropdown-item" href="#"><li>Стрижка бороди</li></a>
-                            <a class="dropdown-item" href="./keratin.html"><li>Кератин</li></a>
-                            <a class="dropdown-item" href="./botoks.html"><li>Ботокс</li></a>
-                            <a class="dropdown-item" href="./nanoplast.html"><li>Нанопластика</li></a>
-                            <a class="dropdown-item" href="./reconstruction.html"><li>Реконструкція волосся</li></a>
-                        </ul></li>
-                    <li><a href="./price.html">Ціни</a></li>    
-                    <li><a href="./contact.html">Контакти</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container header_container">
+                <div class="header_container-logo"><img src="./img/logo/logo.png" alt=""></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Головна</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./gallery.html">Галерея</a>
+                        <li class="nav-item dropdown"><a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Послуги <span>&#9660;</span></a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#"><li>Жіноча стрижка</li></a>
+                                <a class="dropdown-item" href="#"><li>Чоловіча стрижка</li></a>
+                                <a class="dropdown-item" href="#"><li>Дитяча стрижка</li></a>
+                                <a class="dropdown-item" href="./paint.html"><li>Фарбування</li></a>
+                                <a class="dropdown-item" href="#"><li>Зачіски</li></a>
+                                <a class="dropdown-item" href="#"><li>Стрижка бороди</li></a>
+                                <a class="dropdown-item" href="./keratin.html"><li>Кератин</li></a>
+                                <a class="dropdown-item" href="./botoks.html"><li>Ботокс</li></a>
+                                <a class="dropdown-item" href="./nanoplast.html"><li>Нанопластика</li></a>
+                                <a class="dropdown-item" href="./reconstruction.html"><li>Реконструкція волосся</li></a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./price.html">Ціни</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Контакти</a>
+                        </li>     
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <section>
-        <div class="paint container_mini">
-            <h1>Фарбування</h1>
-            <h2>Мрієте зробити шатуш, балаяж або омбре? Чи вибрали інше фарбування?</h2>
-            <div class="paint__wrap">
+        <div class="paint"><img src="./img/background/paint.jpeg" alt=""></div>
+            <div class="paint-container container_mini">
                 <h1>Фарбування</h1>
-                <p>Мрієте зробити шатуш, балаяж чи омбре?</p>
-                <p>Чи вибрали інше фарбування?</p>
-                <p>
-                    Ми гарантуємо, що Ви отримаєте саме той результат, який уявляли перед візитом в салон Майстерня Краси. Ми використовуємо лише високоякісні матеріали перевірених відомих фірм. Роблячи фарбування в нашому салоні, ви можете не хвилюватись за здоров'я свого волосся!
-                </p>
-                <p>Перегляньте приклади <a href="#">наших робіт</a>.</p>
-                <p>Дізнатися прайс на фарбування можна <a href="./price.html">тут</a>.</p>
-                <p>Або просто зателефонуйте нам:</p>
-                <p><a href="tel:+80633465187">063 346 51 87</a></p>
-            </div>
-        </div>
+                <h2>Мрієте зробити шатуш, балаяж або омбре? Чи вибрали інше фарбування?</h2>
+                <div class="paint__wrap">
+                    <h3>Фарбування</h3>
+                    <p>Мрієте зробити шатуш, балаяж чи омбре?</p>
+                    <p>Чи вибрали інше фарбування?</p>
+                    <p>
+                        Ми гарантуємо, що Ви отримаєте саме той результат, який уявляли перед візитом в салон Майстерня Краси. Ми використовуємо лише високоякісні матеріали перевірених відомих фірм. Роблячи фарбування в нашому салоні, ви можете не хвилюватись за здоров'я свого волосся!
+                    </p>
+                    <p>Перегляньте приклади <a href="./gallery.html">наших робіт</a>.</p>
+                    <p>Дізнатися прайс на фарбування можна <a href="./price.html">тут</a>.</p>
+                    <p>Або просто зателефонуйте нам:</p>
+                    <p><a href="tel:+80633465187">063 346 51 87</a></p>
+                </div>
+            </div>            
     </section>
 
 

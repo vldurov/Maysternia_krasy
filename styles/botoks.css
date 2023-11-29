@@ -41,67 +41,39 @@ body, p {
 }
 
 .header_container-logo img {
-    width: 25%;
+    width: 100%;
 }
 
 .header_container-logo {
-    width: 40%;
+    width: 11%;
 }
 
-.header_container-navigation {
-    width: 60%;
-    align-self: center;
+.navbar-collapse {
+    flex-grow: 0;
 }
 
-.header_container-navigation ul {
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    align-items: center;
+.navbar-collapse ul {
+    font-size: 2rem;
 }
 
-.header_container-navigation span {
+.navbar-collapse span {
     font-size: 1rem;
 }
 
-.header_container-navigation li ul {
-    display: none;
-}
-
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active, 
+.dropdown-item:active {
     background-color: #34040437;
 }
 
-.header_container-navigation li:hover ul {
-    display: block;
-}
-
-.header_container-navigation li li:hover {
-    opacity: 1;
-}
-
- .header_container-navigation li li:hover a {
-    color: #840000;
-}
-
-.header_container-navigation a:hover {
-    color: #bd3e3e;
-    transition: all .3s;
-}
-
-.header_container-navigation a:active {
-    color: #840000;
-    transition: none;
-}
-
-.header_container-navigation a {
-    font-size: 2rem;
-    text-decoration: none;
+.dropdown-item {
     color: #340404;
 }
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #340404;
+}
+
 
 /* botoks */
 

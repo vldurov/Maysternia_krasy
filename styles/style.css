@@ -85,67 +85,39 @@ body, p {
 }
 
 .header_container-logo img {
-    width: 25%;
+    width: 100%;
 }
 
 .header_container-logo {
-    width: 40%;
+    width: 11%;
 }
 
-.header_container-navigation {
-    width: 60%;
-    align-self: center;
+.navbar-collapse {
+    flex-grow: 0;
 }
 
-.header_container-navigation ul {
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    align-items: center;
+.navbar-collapse ul {
+    font-size: 2rem;
 }
 
-.header_container-navigation span {
+.navbar-collapse span {
     font-size: 1rem;
 }
 
-.header_container-navigation li ul {
-    display: none;
-}
-
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active, 
+.dropdown-item:active {
     background-color: #34040437;
 }
 
-.header_container-navigation li:hover ul {
-    display: block;
-}
-
-.header_container-navigation li li:hover {
-    opacity: 1;
-}
-
- .header_container-navigation li li:hover a {
-    color: #840000;
-}
-
-.header_container-navigation a:hover {
-    color: #bd3e3e;
-    transition: all .3s;
-}
-
-.header_container-navigation a:active {
-    color: #840000;
-    transition: none;
-}
-
-.header_container-navigation a {
-    font-size: 2rem;
-    text-decoration: none;
+.dropdown-item {
     color: #340404;
 }
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #340404;
+}
+
 
 /* section baner*/
 
@@ -155,6 +127,10 @@ body, p {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
+}
+
+.baner-info-mobile {
+    display: none;
 }
 
 .baner-info p:nth-child(1) {
@@ -291,6 +267,7 @@ body, p {
 .work-details {
     display: flex;
     margin-top: 10rem;
+    padding: 0 2rem 0 2rem;
 }
 
 .work-details img {
@@ -401,4 +378,121 @@ body, p {
 
 .contact-us div p:nth-child(4), .contact-us div p:nth-child(7) {
     color: rgb(191, 148, 148);
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .container_mini, .container {
+        width: 90%;
+    }
+    .header_container-logo {
+        width: 20%;
+    }
+    .header_container{
+        padding: 1rem;
+    }
+    .header_container-navigation {
+        display: none;
+    }
+
+      .baner-info {
+        display: none;
+      }
+      .baner {
+        background-position: center center;
+      }
+      .baner-info-mobile {
+        display: inherit;
+        color: white;
+        text-align: center;
+        font-size: 4.5rem;
+        font-weight: 700;
+        padding: 10rem 2rem 0 2rem;
+        opacity: .9;
+      }
+      .welcome p:nth-child(2) {
+        font-size: 6rem;
+      }
+      .welcome_wrap_first div,
+      .welcome_wrap_second div {
+        width: 90%;
+      }
+      .welcome_wrap_first {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+      }
+      .welcome_wrap_second {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .work {
+        font-size: 3rem;
+      }
+      .work-details {
+        flex-direction: column-reverse;
+      }
+      .work-details img {
+        width: 90%;
+      }
+      .work-details-wrap {
+        display: contents;
+      }
+      .work-details-wrap div {
+        margin-bottom: 2rem;
+      }
+      .contact {
+        height: 71rem;
+      }
+      .contact-us {
+        flex-direction: column;
+        align-items: center;
+      }
+      .contact-us div:last-of-type {
+        margin-top: 2rem;
+        align-items: baseline;
+      }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    .container_mini, .container {
+        width: 90%;
+    }
+    .welcome_wrap_first,
+    .welcome_wrap_second {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    .welcome_wrap_first div,
+    .welcome_wrap_second div {
+        width: 100%;
+      }
+      .work {
+        font-size: 3rem;
+      }
+      .work-details {
+        flex-direction: column-reverse;
+      }
+      .work-details img {
+        width: 90%;
+      }
+      .work-details-wrap {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        width: 90%;
+        align-self: center;
+      }
+      .work-details-wrap div {
+        margin-bottom: 2rem;
+      }
 }
