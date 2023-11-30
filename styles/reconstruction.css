@@ -68,14 +68,6 @@ body, p {
 
 /* nano-info */
 
-/* .reconstruction {
-    background-image: url(../img/background/slide3.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
-} */
-
 .reconstruction{
     position: relative;
     font-size: 1.7rem;

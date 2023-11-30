@@ -69,15 +69,6 @@ body, p {
 
 /* nano-info */
 
-/* .nano {
-    background-image: url(../img/background/nano.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-size: 1.7rem;
-    color: black;
-} */
-
 .nano {
     position: relative;
     font-size: 1.7rem;
