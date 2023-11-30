@@ -73,14 +73,33 @@ body, p {
 
 /* price */
 
-.price {
+/* .price {
     background-image: url(../img/background/backgr2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding-top: 5rem;
     padding-bottom: 5rem;
-}
+} */
+
+.price {
+    position: relative;
+    font-size: 1.7rem;
+    color: black;
+  }
+.price::before {
+      position: fixed;
+      background: url("../img/background/backgr2.jpeg") no-repeat;
+      background-size: cover;
+      content: ' ';
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      will-change: transform;
+      z-index: -1;  
+  }
+
 
 .price__block > p {
     font-size: 1.9rem;

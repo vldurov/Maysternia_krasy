@@ -69,14 +69,33 @@ body, p {
 
 /* nano-info */
 
-.nano {
+/* .nano {
     background-image: url(../img/background/nano.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-size: 1.7rem;
     color: black;
-}
+} */
+
+.nano {
+    position: relative;
+    font-size: 1.7rem;
+    color: black;
+  }
+.nano::before {
+      position: fixed;
+      background: url("../img/background/nano.jpeg") no-repeat;
+      background-size: cover;
+      content: ' ';
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      will-change: transform;
+      z-index: -1;  
+  }
+
 
 .nano-wrap {
     background-color: rgba(255, 255, 255, 0.5);

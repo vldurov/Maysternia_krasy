@@ -82,21 +82,17 @@ body, p {
     color: black;
   }
 .reconstruction::before {
+      position: fixed;
       background: url("../img/background/slide3.jpeg") no-repeat;
       background-size: cover;
       content: ' ';
       height: 100%;
-      left: 0;
-      position: fixed;
-      top: 0;
       width: 100%;
+      left: 0;
+      top: 0;
       will-change: transform;
-      z-index: -1;
-      
+      z-index: -1;  
   }
-
-
-
 
 .reconstruction-wrap {
     background-color: rgba(255, 255, 255, 0.5);
