@@ -23,10 +23,6 @@ body, p {
 }
 
 /* header navigation */
-.container_price {
-    width: 50%;
-    margin: 0 auto;
-}
 
 .container {
     width: 85%;
@@ -71,77 +67,38 @@ body, p {
 }
 
 
-/* price */
+/* beard */
 
-.price {
-    position: relative;
-    font-size: 1.7rem;
-    color: black;
-  }
-.price::before {
-      position: fixed;
-      background: url("../img/background/backgr2.jpeg") no-repeat;
-      background-size: cover;
-      content: ' ';
-      height: 100vh;
-      width: 100%;
-      left: 0;
-      top: 0;
-      will-change: transform;
-      z-index: -1;  
-  }
-
-
-.price__block > p {
-    font-size: 1.9rem;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    margin: 1rem 0 1rem 0;
+.beard {
+    background-image: url(../img/background/beard.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 
-.price__wrap span {
-    font-size: 1.3rem;
-}
-
-.price__block {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: .1rem 2rem 5rem 2rem;
-    margin-top: 3rem;
-}
-
-.price__block {
-    font-size: 2rem;
+.beard-container {
     text-align: center;
+    padding: 6rem 0 6rem 0;
 }
 
-.price__block {
-    margin-bottom: 3rem;
+.beard-container h1 {
+    font-size: 8rem; 
 }
 
-.price__item span {
-    font-size: 1.2rem;
+.beard-container h2 {
+    font-size: 3rem;
 }
 
-.price__item {
-    display: flex;
-    justify-content: space-between;
+.beard-container h3 {
+    margin-top: 7rem;
+    font-size: 4rem;
 }
 
-.price__item p {
+.beard__wrap {
+    padding: 2rem;
     font-size: 1.7rem;
-    color: #000000c9;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* footer */
 
@@ -195,19 +152,27 @@ body, p {
     font-size: 1.5rem;
 }
 
-
-
 @media screen and (max-width: 767px) {
-    .container_price {
-        width: 75%;
+    .beard-container h1 {
+        font-size: 4rem; 
+    }
+    .beard-container h2 {
+        font-size: 1.5rem;
+    }
+    .beard-container h3 {
+        margin-top: 4rem;
+        font-size: 3rem;
+    }
+    .container_mini {
+        width: 95%;
     }
     .contact {
-        height: 55rem;
+        height: 53rem;
     }
     .contact-us {
         flex-direction: column;
         align-items: center;
-        width: 95%;
+        width: 100%;
         padding: 0;
     }
     .contact-us div {
@@ -216,21 +181,5 @@ body, p {
     .contact-us div:last-of-type {
         margin-top: 2rem;
         align-items: baseline;
-    }    
-}
-
-
-@media screen and (max-width: 590px) {
-    .container_price {
-        width: 100%;
-    }
-    .price__block {
-        padding: .1rem .5rem 5rem .5rem;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 960px) {
-    .container_price {
-        width: 65%;
     }
 }
