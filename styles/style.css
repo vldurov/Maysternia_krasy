@@ -110,8 +110,7 @@ body, p {
     color: #340404;
 }
 
-
-/* section baner*/
+/*baner*/
 
 .baner {
     background-image: url(../img/background/hand.jpeg);
@@ -125,7 +124,7 @@ body, p {
     display: none;
 }
 
-.baner-info p:nth-child(1) {
+.baner-info h1 {
     padding-top: 7vh;
     font-size: 6rem;
     font-weight: 700;
@@ -163,7 +162,7 @@ body, p {
     text-align: center;
 }
 
-.welcome p:first-of-type {
+.welcome h1 {
     font-size: 3rem;
     font-weight: 700;
     color: #340404;
@@ -242,7 +241,7 @@ body, p {
     transform: translateY(-4.5rem);
 }
 
-/* work-details */
+/* work */
 
 .work {
     text-align: center;
@@ -368,6 +367,19 @@ body, p {
     font-size: 1.5rem;
 }
 
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:30%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
 @media screen and (max-width: 767px) {
     .container_mini, .container {
